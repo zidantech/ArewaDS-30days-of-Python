@@ -1,11 +1,10 @@
-
+# Exercise: Level 1
+#"python --version" To check python version in terminal
 # Exercise: Level 2
 print('__________Exercise: Level 2__________')
 
 # Question 2
 print('__________Question 2__________')
-
-print("to check python version in terminal we use: Python --version") 
 
 print(3+4)
 print(4-3)
@@ -54,10 +53,12 @@ print(type({"Country": "Nigeria", "age" : 3}))
 print('__________Question 2__________')
 
 import math
-q1 = 2
-p1 = 3
-q2 = 10
-p2 = 8
+
+p1 = 2
+p2 = 3
+q1 = 10
+q2 = 8
+
 
 dst = math.sqrt((q1 - p1)**2 + (q2 - p2)**2)
 print(f"The Euclidian distance between (2, 3) and (10, 8) is {dst}")

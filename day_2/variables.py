@@ -10,8 +10,21 @@ year = 2023
 is_married = False
 is_True = True
 is_light = False
+
 # Declaring multiple variables in one line
 first_name, last_name, country, age, is_married = 'Zidan', 'Musa', 'Nigeria', 23, False
+
+# Printing the values stored in the variables
+print('First name:', first_name)
+print('Last name: ', last_name)
+print('Full name: ', Full_name)
+print('Country: ', country)
+print('City: ', city)
+print('Age: ', age)
+print("year: ", year )
+print('Married: ', is_married)
+print('is true: ', is_True)
+print('is Light: ', is_light)
 
 # Exercises: Level 2
 print(type(first_name))
@@ -26,6 +39,10 @@ print(type(is_True))
 print(type(is_light))
 
 print(len(first_name))
+
+print(f"lenght of first name is {len(first_name)} the last name is{len(last_name)}")
+print(len(last_name) < len(first_name))
+
 num_one = 5
 num_two = 4
 
@@ -42,6 +59,7 @@ radius = 30
 
 area_of_circle = (22/7) * radius ** 2
 print(area_of_circle)
+
 circum_of_circle = 2 * (22/7) * radius
 print(area_of_circle)
 
