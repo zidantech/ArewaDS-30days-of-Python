@@ -1,4 +1,4 @@
-countries_list = [
+countries = [
   'Afghanistan',
   'Albania',
   'Algeria',
