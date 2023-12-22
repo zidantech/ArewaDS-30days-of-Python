@@ -1,0 +1,2 @@
+# Day_Exception_handling
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/17_Day_Exception_handling/17_exception_handling.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/17_Day_Exception_handling/17_exception_handling.md)
