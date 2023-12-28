@@ -1,0 +1,2 @@
+# Day 20 - PIP
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/20_Day_Python_package_manager/20_python_package_manager.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/20_Day_Python_package_manager/20_python_package_manager.md)
