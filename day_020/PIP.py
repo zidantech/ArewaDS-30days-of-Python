@@ -13,10 +13,13 @@ word_counts = Counter(words)
 top_10_words = word_counts.most_common(10)
 print(top_10_words)
 
+
+
+
 # Read the cats API and cats_api = 'https://api.thecatapi.com/v1/breeds' and find :
-# the min, max, mean, median, standard deviation of cats' weight in metric units.
-# the min, max, mean, median, standard deviation of cats' lifespan in years.
-# Create a frequency table of country and breed of cats
+    # the min, max, mean, median, standard deviation of cats' weight in metric units.
+    # the min, max, mean, median, standard deviation of cats' lifespan in years.
+    # Create a frequency table of country and breed of cats
 
 cats_api = 'https://api.thecatapi.com/v1/breeds'
 
@@ -77,8 +80,6 @@ def stats_params(list):
     return stat
 print(stats_params(upper_cat_weight_metric))
 
-
-
 print(f'Upper limit of cat weights in metric units: {stats_params(upper_cat_weight_metric)}, lower limit of cat weights in metric units: {stats_params(lower_cat_weight_metric)},upper limit of cat lifespan in years : {stats_params(upper_cat_lifespan)},lower limits of cat lifespan in years: {stats_params(lower_cat_lifespan)}')
 answer_dict = {}
 answer_dict['Upper limit stats of cat weights in metric units'] = stats_params(upper_cat_weight_metric)
@@ -86,7 +87,6 @@ answer_dict['Lower limit stats of cat weights in metric units'] = stats_params(l
 answer_dict['Upper limit stat of cat lifespan in years'] = stats_params(upper_cat_lifespan)
 answer_dict['Lower limit stats of cat lifespan in years'] = stats_params(lower_cat_lifespan)
 print(f'Answer to first two sub questions of question 2: {answer_dict}')
-
 
 # Third sub-question
 from collections import defaultdict
@@ -100,17 +100,19 @@ for breed in breed_info.values():
 
 print(frequency_table)
 
+
+
 # Read the countries API and find
 # the 10 largest countries
 # the 10 most spoken languages
 # the total number of languages in the countries API
 
+# Can't reach URL (https://restcountries.eu/rest/v2/all)
 # Webpage is not working!
 
-#UCI is one of the most common places to get data sets for data science and machine learning.
-# Read the content of UCI (https://archive.ics.uci.edu/ml/datasets.php). 
-# Without additional libraries it will be difficult, so you may try it with BeautifulSoup4
 
+
+# UCI is one of the most common places to get data sets for data science and machine learning. Read the content of UCL (https://archive.ics.uci.edu/ml/datasets.php). Without additional libraries it will be difficult, so you may try it with BeautifulSoup4
 
 import requests
 from bs4 import BeautifulSoup
@@ -127,11 +129,17 @@ soup = BeautifulSoup(html_content, 'html.parser')
 # Find the table that contains the list of data sets
 table = soup.find('table', {'border': '1'})
 
-# Extract the name of each data set from the table rows, for now, a humble goal due to my current limited skills
-rows = table.find_all('tr')[1:]
-for row in rows:
-    cells = row.find_all('td')
-    name = cells[0].text.strip()
-    # Gives the names of all the datasets in the table
-    print(f'{name}')
+# Check if the table is found
+if table:
+    # Extract the name of each data set from the table rows
+    rows = table.find_all('tr')[1:]
+    for row in rows:
+        cells = row.find_all('td')
+        if len(cells) > 0:  # Ensure that there are cells in the row
+            name = cells[0].text.strip()
+            # Print the names of all the datasets in the table
+            print(name)
+else:
+    print("Table not found on the page. Check the page structure or URL.")
+
 
