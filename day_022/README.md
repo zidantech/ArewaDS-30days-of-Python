@@ -1,0 +1,2 @@
+# Day 22 - Web Scrapping
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/22_Day_Web_scraping/22_web_scraping.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/22_Day_Web_scraping/22_web_scraping.md)
