@@ -1,0 +1,2 @@
+# Day 23 - Virtual Environment
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/23_Day_Virtual_environment/23_virtual_environment.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/23_Day_Virtual_environment/23_virtual_environment.md)
