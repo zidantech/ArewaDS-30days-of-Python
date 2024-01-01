@@ -1,0 +1,2 @@
+# Day 25 - Pandas
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/25_Day_Pandas/25_pandas.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/25_Day_Pandas/25_pandas.md)

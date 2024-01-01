@@ -1,0 +1,2 @@
+# Day 24 - Statistics
+[https://github.com/arewadataScience/30-Days-of-Python/blob/main/24_Day_Statistics/24_statistics.md](https://github.com/arewadataScience/30-Days-of-Python/blob/main/24_Day_Statistics/24_statistics.md)
